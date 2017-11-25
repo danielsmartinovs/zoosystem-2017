@@ -15,6 +15,10 @@ public class Visitor {
     
     private String name = "";
     
+    /**
+     * Stores bunch of tickets
+     */
+    
     private ArrayList<Ticket> tickets = new ArrayList<Ticket>();  
     
     public Visitor() {

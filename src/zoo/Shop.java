@@ -11,11 +11,20 @@ package zoo;
  */
 public class Shop {
     
+    /**
+     * Gives visitor specific type, price ticket to specific date
+     */
+    
     public void giveTicket(double price, String date, String type, Visitor visitor) {
         Ticket ticket = new Ticket( price, date, type );
         
         visitor.addTicket(ticket);
     }
+    
+    /**
+     * Checks if specific visitor have specific type ticket to specific date
+     * Returns true or false
+     */
     
     public boolean checkVisitorTicket(Visitor visitor, String date, String type) {
         

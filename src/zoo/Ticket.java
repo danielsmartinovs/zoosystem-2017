@@ -11,6 +11,10 @@ package zoo;
  */
 public class Ticket {
     
+    /**
+     * TODO: Define ticket prices for each ticket type
+     */
+    
     private double price = (double)0.00;
     
     private String date = ""; 
