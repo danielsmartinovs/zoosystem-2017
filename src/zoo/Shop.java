@@ -28,19 +28,16 @@ public class Shop {
     
     public boolean checkVisitorTicket(Visitor visitor, String date, String type) {
         
-        boolean haveTicket = false;
-        
         for (Ticket __ticket : visitor.getTickets()) {
             
-            if(__ticket.getDate() == date && type == __ticket.getType())
+            if(__ticket.getDate().equals(date) && __ticket.getType().equals(type))
             {
-                haveTicket = true;
-                break;
+                return true;
             }
             
         }
 
-        return haveTicket;
+        return false;
     }
     
 }
